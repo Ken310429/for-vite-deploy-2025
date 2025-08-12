@@ -8,8 +8,10 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 import Menubar from 'primevue/menubar'
 import Message from 'primevue/message';
+import Button from 'primevue/button';
 // PrimeVue CSS
 import Aura from '@primeuix/themes/aura'
+import 'primeicons/primeicons.css'
 
 
 const app = createApp(App)
@@ -24,7 +26,7 @@ app.use(PrimeVue, {
 })
 
 app.component('PrimeMenubar', Menubar)
-// eslint-disable-next-line
-app.component('Message', Message)
+app.component('Message', Message) // eslint-disable-line
+app.component('Button', Button) // eslint-disable-line
 
 app.mount('#app')
