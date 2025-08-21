@@ -1,1 +1,0 @@
-import{j as e,n as t}from"./index-BYs9QKql.js";var n=(e,t)=>{let n=e.__vccOpts||e;for(let[e,r]of t)n[e]=r;return n};const r={};function i(n,r){return t(),e(`h1`,null,`首頁`)}var a=n(r,[[`render`,i]]);export{a as default};
