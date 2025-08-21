@@ -23,7 +23,7 @@
           </select>
         </td>
         <td>{{ item.price }}</td>
-        <td>{{ itemPrice }}</td>
+        <td>{{ PorductPrice }}</td>
       </tr>
     </tbody>
   </table>
@@ -33,7 +33,7 @@
 const props = defineProps({
   cartItems: Object,
   itemCount: Array,
-  itemPrice: Number,
+  PorductPrice: Number,
 }
 )
 

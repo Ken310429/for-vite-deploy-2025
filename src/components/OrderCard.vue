@@ -15,7 +15,7 @@
             <tr>
               <td>{{ item.name }}</td>
               <td>{{ item.count }}</td>
-              <td>{{ itemPrice }}</td>
+              <td>{{ PorductPrice }}</td>
             </tr>
           </tbody>
         </table>

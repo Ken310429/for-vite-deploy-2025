@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-8">
           <shoppingCart :cartItems="cartItems" :itemCount="itemCount" @delete-item="deleteProduct"
-            :itemPrice="itemPrice" />
+            :PorductPrice="PorductPrice" />
           <div class="text-end mb-3">
             <h5>總計: <span>${{ TotalPrice }}</span></h5>
           </div>
@@ -20,7 +20,7 @@
       <hr />
       <div class="row justify-content-center">
         <div class="col-8">
-          <order-card :order="order" :OrderTotalPrice="OrderTotalPrice" :item-price="itemPrice" />
+          <order-card :order="order" :OrderTotalPrice="OrderTotalPrice" :PorductPrice="PorductPrice" />
         </div>
       </div>
     </div>
@@ -109,10 +109,9 @@ const addProduct = (productItem) => {
   // console.log(shoppingCart.value)
 };
 
-const itemPrice = (item) => {
+const PorductPrice = (item) => {
   return item.price * item.count
 }
-
 
 const TotalPrice = computed(() => {
   return cartItems.value.reduce((prev, curr) =>
