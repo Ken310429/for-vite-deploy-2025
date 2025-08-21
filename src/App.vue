@@ -14,13 +14,17 @@ const items = ref([
   {
     label: '第二週',
     route: '/weektwo'
+  },
+  {
+    label: '第三週',
+    route: '/weekthree'
   }
 ])
 </script>
 
 <template>
   <PrimeMenubar :model="items">
-    <template #item="{ item, props}">
+    <template #item="{ item, props }">
       <router-link :to="item.route" v-bind="props.action">
         {{ item.label }}
       </router-link>
