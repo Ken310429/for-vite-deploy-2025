@@ -15,7 +15,7 @@
             <tr>
               <td>{{ item.name }}</td>
               <td>{{ item.count }}</td>
-              <td>{{ PorductPrice }}</td>
+              <td>{{ PorductPrice(item) }}</td>
             </tr>
           </tbody>
         </table>
@@ -31,6 +31,6 @@
 const props = defineProps({
   order: Array,
   OrderTotalPrice: Number,
-  itemPrice: Number,
+  PorductPrice: Function,
 })
 </script>

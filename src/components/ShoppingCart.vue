@@ -23,7 +23,7 @@
           </select>
         </td>
         <td>{{ item.price }}</td>
-        <td>{{ PorductPrice }}</td>
+        <td>{{ PorductPrice(item) }}</td>
       </tr>
     </tbody>
   </table>
@@ -33,9 +33,8 @@
 const props = defineProps({
   cartItems: Object,
   itemCount: Array,
-  PorductPrice: Number,
-}
-)
+  PorductPrice: Function,
+})
 
 const emit = defineEmits(['deleteItem'])
 
