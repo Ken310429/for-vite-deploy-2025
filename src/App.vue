@@ -20,8 +20,8 @@ const items = ref([
     route: '/weekthree'
   },
   {
-    label: '進階',
-    route: '/advance'
+    label: '進階任務',
+    route: '/advanceMission'
   }
 ])
 </script>

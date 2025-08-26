@@ -67,7 +67,6 @@ const notificationState = ref({ message: '' });
 provide('notificationState', notificationState);
 provide('notify', (message) => {
   notificationState.value.message = message
-  console.log(notificationState.value.message);
   setTimeout(() => {
     notificationState.value.message = ''
   }, 3000)

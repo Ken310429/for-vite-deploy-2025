@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 定義路由
 const routes = [
@@ -26,15 +26,15 @@ const routes = [
     component: () => import('@/views/Week3View.vue')
   },
   {
-    path: '/advance',
-    name: 'advance',
+    path: '/advanceMission',
+    name: 'advanceMission',
     component: () => import('@/views/AdvanceView.vue')
   }
 ]
 
 // 建立 Router 實例
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes
 })
 
