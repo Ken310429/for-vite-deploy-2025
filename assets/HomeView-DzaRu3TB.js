@@ -1,1 +1,0 @@
-import{k as e,p as t}from"./index-q2oFMUfA.js";import{b as n}from"./_plugin-vue_export-helper-DLjM_K_a.js";const r={};function i(n,r){return t(),e(`h1`,null,`首頁`)}var a=n(r,[[`render`,i]]);export{a as default};
