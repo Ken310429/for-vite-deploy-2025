@@ -29,9 +29,9 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue';
-import OrderList from '@/components/OrderList.vue';
-import shoppingCart from '@/components/ShoppingCart.vue';
-import OrderCard from '@/components/OrderCard.vue';
+import OrderList from '@/components/WeekThree/OrderList.vue';
+import shoppingCart from '@/components/WeekThree/ShoppingCart.vue';
+import OrderCard from '@/components/WeekThree/OrderCard.vue';
 
 
 const data = [

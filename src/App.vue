@@ -18,6 +18,10 @@ const items = ref([
   {
     label: '第三週',
     route: '/weekthree'
+  },
+  {
+    label: '進階',
+    route: '/advance'
   }
 ])
 </script>
