@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/advanceMission',
     name: 'advanceMission',
-    component: () => import('@/views/AdvanceView.vue')
+    component: () => import('@/views/MissionView.vue')
   }
 ]
 
