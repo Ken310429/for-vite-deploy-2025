@@ -24,10 +24,11 @@ export const signupAPI = async (signupField) => {
 export const signinAPI = async (signInField) => {
   try {
     const res = await api.post(`users/sign_in`, signInField);
-    ApiResponse(res);
+    console.log(res);
+    return ApiResponse(res);
   }
   catch (error) {
-    return ApiError(error, "登入失敗");
+    ApiError(error, "登入失敗");
   }
 }
 export const getTodoAPI = async (token) => {
