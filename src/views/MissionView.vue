@@ -6,16 +6,14 @@
       <!-- 購物車區 -->
       <ShoppingCart :cartItems="cartItems" @remove-to-cart="removeCart" />
     </div>
-    <Toast />
-    <!-- 通知元件 -->
+
 
   </div>
 </template>
 <script setup>
 import ProductList from '@/components/Advance/ProductList.vue';
 import ShoppingCart from '@/components/Advance/ShoppingCart.vue';
-import Toast from '@/components/Advance/Toast.vue';
-import { provide, ref } from 'vue';
+import { ref } from 'vue';
 
 const products = ref([
   {
@@ -62,15 +60,6 @@ const products = ref([
 const cartItems = ref([
 ])
 
-const notificationState = ref({ message: '' });
-
-provide('notificationState', notificationState);
-provide('notify', (message) => {
-  notificationState.value.message = message
-  setTimeout(() => {
-    notificationState.value.message = ''
-  }, 3000)
-});
 
 
 const addCart = (product) => {
@@ -95,11 +84,7 @@ const removeCart = (product) => {
 
 
 </script>
-<style scoped>
-body {
-  background: #f2f2f2f2;
-}
-
+<style>
 .card-img-top {
   height: 150px;
   object-fit: cover;

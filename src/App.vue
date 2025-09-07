@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, provide } from 'vue'
+import Toast from './components/Advance/Toast.vue';
 
 const items = ref([
   {
@@ -22,8 +23,23 @@ const items = ref([
   {
     label: '進階任務',
     route: '/advanceMission'
+  },
+  {
+    label: '最終任務',
+    route: '/login'
   }
 ])
+// 提示元件
+const notificationState = ref({ message: '' });
+provide('notificationState', notificationState);
+provide('notify', (message) => {
+  notificationState.value.message = message
+  setTimeout(() => {
+    notificationState.value.message = ''
+  }, 3000)
+});
+
+
 </script>
 
 <template>
@@ -35,5 +51,6 @@ const items = ref([
     </template>
   </PrimeMenubar>
   <RouterView />
+  <Toast />
 </template>
 <style></style>

@@ -29,12 +29,22 @@ const routes = [
     path: '/advanceMission',
     name: 'advanceMission',
     component: () => import('@/views/MissionView.vue')
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('@/views/RegisterView.vue')
+  },
+  {
+    path: '/login',
+    name: 'logib',
+    component: () => import('@/views/LoginView.vue')
   }
 ]
 
 // 建立 Router 實例
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 

@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/all.scss'
-
+import './assets/todo.css'
 //PrimeVue
 import PrimeVue from 'primevue/config'
 import Menubar from 'primevue/menubar'

@@ -13,9 +13,9 @@
 import { inject } from 'vue';
 
 const state = inject('notificationState')
-
+console.log(state);
 const removeToast = () => {
-  state.message = ''
+  state.value.message = ''
 }
 
 </script>
